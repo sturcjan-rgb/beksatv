@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beksa TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    :root{
+    --bg:#f4f4f6;
+    --card:#ffffff;
+    --card-hover:#fafafa;
+    --line:#e4e4e8;
+    --red:#e30613;          /* značková červená Beksy */
+    --red-deep:#b1030f;
+    --red-dim:#f0b8bb;      /* měkký červený okraj pro hover */
+    --text:#18181b;
+    --text-dim:#6b6b73;
+
+    --fs-date:13px;
+    --fs-date-day:14px;
+    --fs-teams:19px;
+    --fs-phase:12px;
+    --fs-tag:12.5px;
+    --fs-btn:14px;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Segoe UI",Roboto,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  /* tenký červený proužek + jemná diagonála odkazující na blesk v logu */
+  .stripes{
+    height:5px;width:100%;
+    background:
+      linear-gradient(90deg,var(--red) 0%,var(--red-deep) 100%);
+  }
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;}
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand-logo{height:42px;width:auto;display:block;}
+  .wordmark{
+    display:flex;align-items:baseline;gap:7px;
+    font-family:"Barlow Condensed",sans-serif;font-style:italic;
+    line-height:1;
+  }
+  .wordmark .b{font-weight:900;font-size:27px;letter-spacing:0.5px;color:var(--text);}
+  .wordmark .tv{
+    font-weight:800;font-size:15px;letter-spacing:1px;
+    color:#fff;background:var(--red);padding:2px 6px;border-radius:4px;
+    transform:skewX(-8deg);
+  }
+  .platform-note{
+    font-size:11px;color:var(--text-dim);
+    border-left:1px solid var(--line);padding-left:14px;
+    text-transform:uppercase;letter-spacing:0.4px;
+  }
+  .platform-note a{color:var(--text-dim);text-decoration:underline;text-underline-offset:2px;}
+  .platform-note a:hover{color:var(--red);}
+  nav.links{display:flex;align-items:center;gap:24px;font-size:14px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.3px;}
+  nav.links a:hover{color:var(--red);}
+
+  main{max-width:1100px;margin:0 auto;padding:28px 20px 80px;}
+
+  .section-title{display:flex;align-items:center;gap:10px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin:36px 0 14px;}
+  .section-title::after{content:"";flex:1;height:1px;background:var(--line);}
+  .section-title:first-child{margin-top:0;}
+  .dot-live{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(227,6,19,0.20);}
+
+  /* ---- hlavní (featured) zápas ---- */
+  .hero-match{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:0;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+    cursor:pointer;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    transition:border-color .15s ease;
+  }
+  .hero-match:hover{border-color:var(--red-dim);}
+  .hero-thumb{
+    position:relative;
+    min-height:260px;
+    background:
+      radial-gradient(120% 140% at 82% 20%, rgba(255,255,255,0.20) 0%, transparent 55%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,0.07) 0 2px, transparent 2px 30px),
+      linear-gradient(135deg, var(--red) 0%, var(--red-deep) 100%);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hero-thumb::after{ /* náznak čáry hřiště / blesku */
+    content:"";position:absolute;left:0;right:0;bottom:0;height:40%;
+    background:linear-gradient(180deg,transparent,rgba(0,0,0,0.12));
+  }
+  .play-badge{
+    width:72px;height:72px;border-radius:50%;
+    background:#fff;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px rgba(0,0,0,0.28);position:relative;z-index:1;
+  }
+  .play-badge svg{width:26px;height:26px;fill:var(--red);margin-left:4px;}
+  .hero-info{padding:32px 30px;display:flex;flex-direction:column;justify-content:center;}
+  .hero-eyebrow{display:flex;align-items:center;gap:8px;font-size:12px;text-transform:uppercase;letter-spacing:1.3px;color:var(--text-dim);margin-bottom:14px;}
+  .hero-tags{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .hero-opponent{
+    font-family:"Barlow Condensed",sans-serif;font-weight:900;font-style:italic;
+    font-size:42px;line-height:1.0;margin:0 0 12px;color:var(--text);text-transform:uppercase;letter-spacing:0.5px;
+  }
+  .hero-meta{font-size:14px;color:var(--text-dim);margin-bottom:22px;}
+  .hero-meta b{color:var(--text);font-weight:600;}
+  .btn-play-lg{
+    align-self:flex-start;
+    display:inline-flex;align-items:center;gap:9px;
+    background:var(--red);color:#fff;font-weight:700;font-size:14px;
+    padding:12px 20px;border-radius:9px;border:none;cursor:pointer;font-family:inherit;
+  }
+  .btn-play-lg:hover{background:var(--red-deep);}
+  .btn-play-lg svg{width:13px;height:13px;fill:#fff;}
+
+  /* ---- řada 3 karet ---- */
+  .cards-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+  .match-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px;display:flex;flex-direction:column;gap:10px;cursor:pointer;
+    box-shadow:0 1px 2px rgba(0,0,0,0.04);
+    transition:background .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  .match-card:hover{background:var(--card-hover);border-color:var(--red-dim);box-shadow:0 4px 14px rgba(0,0,0,0.07);}
+  .card-top{display:flex;align-items:center;justify-content:space-between;}
+  .card-date{font-size:var(--fs-date);color:var(--text-dim);}
+  .card-opponent{font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:900;font-style:italic;color:var(--text);line-height:1.1;text-transform:uppercase;}
+  .card-phase{font-size:var(--fs-phase);color:var(--text-dim);}
+  .card-action{margin-top:auto;}
+
+  /* ---- sdílené odznaky ---- */
+  .tag-home, .tag-away{font-size:var(--fs-tag);font-weight:700;letter-spacing:0.5px;padding:3px 8px;border-radius:5px;display:inline-block;}
+  .tag-home{background:rgba(227,6,19,0.10);color:#c20512;}
+  .tag-away{background:rgba(0,0,0,0.05);color:var(--text-dim);}
+
+  .btn-play{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;font-weight:700;font-size:var(--fs-btn);padding:8px 14px;border-radius:8px;border:none;font-family:inherit;cursor:pointer;}
+  .btn-play:hover{background:var(--red-deep);}
+  .btn-play svg{width:11px;height:11px;fill:#fff;}
+  .btn-soon{font-size:var(--fs-btn);color:var(--text-dim);background:transparent;border:1px solid var(--line);padding:8px 12px;border-radius:8px;display:inline-block;}
+
+  /* ---- přepínač sezón ---- */
+  .season-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+  .season-tab{
+    background:var(--card);border:1px solid var(--line);color:var(--text-dim);
+    font-size:13px;font-weight:600;padding:8px 16px;border-radius:9px;
+    cursor:pointer;font-family:inherit;
+  }
+  .season-tab.active{background:var(--red);color:#fff;border-color:var(--red);}
+  .season-tab:not(.active):hover{border-color:var(--red-dim);color:var(--text);}
+
+  /* ---- filtry + seznam ---- */
+  .filter-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px;}
+  .filter-toggle{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:4px;}
+  .filter-btn{background:transparent;border:none;color:var(--text-dim);font-size:13px;font-weight:600;padding:7px 14px;border-radius:6px;font-family:inherit;cursor:pointer;}
+  .filter-btn.active{background:var(--red);color:#fff;}
+  .filter-select{background:var(--card);border:1px solid var(--line);color:var(--text);font-size:13px;padding:9px 12px;border-radius:9px;font-family:inherit;}
+  .search-wrap{position:relative;flex:1;min-width:200px;}
+  .search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:14px;height:14px;fill:none;stroke:var(--text-dim);stroke-width:2;}
+  .search-wrap input{width:100%;background:var(--card);border:1px solid var(--line);color:var(--text);font-size:13px;padding:9px 12px 9px 34px;border-radius:9px;font-family:inherit;}
+  .search-wrap input::placeholder{color:var(--text-dim);}
+  .search-wrap input:focus{outline:none;border-color:var(--red-dim);}
+  .results-count{font-size:12px;color:var(--text-dim);margin:-4px 0 14px;}
+
+  .match-list{display:flex;flex-direction:column;gap:8px;}
+  .match{display:grid;grid-template-columns:100px 1fr 110px 140px;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;transition:background .15s ease, border-color .15s ease;}
+  .match.playable{cursor:pointer;}
+  .match.playable:hover{background:var(--card-hover);border-color:var(--red-dim);}
+  .m-date{font-size:var(--fs-date);color:var(--text-dim);line-height:1.3;}
+  .m-date b{display:block;color:var(--text);font-size:var(--fs-date-day);}
+  .m-teams{font-size:var(--fs-teams);font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .opp-name{font-family:"Barlow Condensed",sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:0.3px;}
+  .m-phase{font-size:var(--fs-phase);color:var(--text-dim);text-align:right;}
+  .m-action{display:flex;justify-content:flex-end;}
+
+  .empty-box{border:1px dashed var(--line);border-radius:12px;padding:24px;text-align:center;color:var(--text-dim);font-size:14px;background:var(--card);}
+
+  footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;color:var(--text-dim);font-size:12px;}
+  footer a{color:var(--text-dim);text-decoration:underline;text-underline-offset:2px;}
+  footer a:hover{color:var(--red);}
+
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;}
+  .overlay.open{display:flex;}
+  .player{width:100%;max-width:920px;background:#000;border-radius:12px;overflow:hidden;border:1px solid var(--line);}
+  .player-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--card);}
+  .player-head h3{margin:0;font-size:15px;font-weight:700;}
+  .player-head .close{cursor:pointer;color:var(--text-dim);font-size:20px;line-height:1;background:none;border:none;}
+  .player-head .close:hover{color:var(--red);}
+  .video-wrap{position:relative;width:100%;padding-top:56.25%;background:#000;}
+  .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+
+  @media (max-width:800px){
+    .hero-match{grid-template-columns:1fr;}
+    .hero-thumb{min-height:180px;}
+    .cards-row{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    .match{grid-template-columns:1fr;gap:6px;text-align:left;}
+    .m-phase{text-align:left;}
+    .m-action{justify-content:flex-start;}
+    nav.links{display:none;}
+    .platform-note{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="stripes"></div>
+  <div class="nav">
+    <div class="brand">
+      <!-- Logo Beksy (oficiální PNG, zapečené jako base64 přímo v souboru).
+           Až bude k dispozici vektorové SVG loga, stačí <img> nahradit inline <svg>. -->
+      <img class="brand-logo" alt="BK Pardubice — Beksa" src="data:image/png;base64,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">
+      <div class="wordmark"><span class="b">BEKSA</span><span class="tv">TV</span></div>
+      <div class="platform-note">Běží na platformě <a href="https://www.tvcom.cz" target="_blank" rel="noopener">tvcom</a></div>
+    </div>
+    <nav class="links">
+      <a href="https://bkpardubice.cz" target="_blank" rel="noopener">Klubový web</a>
+      <a href="https://www.nbl.cz" target="_blank" rel="noopener">NBL</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="section-title" id="heroSectionTitle">Poslední zápas</div>
+  <div class="hero-match" id="heroMatch"></div>
+
+  <div class="section-title">Odehrané zápasy</div>
+  <div class="season-tabs" id="seasonTabs"></div>
+  <div class="filter-bar">
+    <div class="filter-toggle" id="locToggle">
+      <button class="filter-btn active" data-loc="all" type="button">Vše</button>
+      <button class="filter-btn" data-loc="home" type="button">Doma</button>
+      <button class="filter-btn" data-loc="away" type="button">Venku</button>
+    </div>
+    <select class="filter-select" id="phaseSelect"><option value="all">Všechny fáze</option></select>
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Hledat soupeře…">
+    </div>
+  </div>
+
+  <div class="cards-row" id="cardsRow"></div>
+
+  <div class="match-list" id="matchList"></div>
+
+</main>
+
+<footer>Beksa TV běží na video technologii <a href="https://www.tvcom.cz" target="_blank" rel="noopener">tvcom.cz</a> · Provozuje BK Pardubice, a.s.</footer>
+
+<div class="overlay" id="overlay">
+  <div class="player">
+    <div class="player-head">
+      <h3 id="playerTitle">Zápas</h3>
+      <button class="close" onclick="closePlayer()">✕</button>
+    </div>
+    <div class="video-wrap"><iframe id="playerFrame" src="" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<script>
+let matches = [];
+
+const PLAY_ICON = `<svg viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>`;
+const state = { season: null, loc: "all", phase: "all", q: "" };
+
+// Kolik hodin po výskoku ještě považujeme zápas za "živě" (rozcvička +
+// 4 čtvrtiny + přestávky + rezerva na dojezd přenosu).
+const LIVE_WINDOW_HOURS = 3;
+const PRE_SHOW_MINUTES = 15;
+
+function opponentOf(m){ return m.us === "home" ? m.away : m.home; }
+function tagOf(m){ return m.us === "home" ? `<span class="tag-home">DOMA</span>` : `<span class="tag-away">VENKU</span>`; }
+
+function parseStart(m){
+  const [d, mo, y] = m.date.split(".").map(s => parseInt(s.trim(), 10));
+  const [hh, mm] = m.time.split(":").map(Number);
+  return new Date(y, mo - 1, d, hh, mm);
+}
+
+function statusOf(m, now){
+  const start = parseStart(m);
+  const liveFrom = new Date(start.getTime() - PRE_SHOW_MINUTES * 60000);
+  const liveUntil = new Date(start.getTime() + LIVE_WINDOW_HOURS * 3600000);
+  if(now >= liveFrom && now <= liveUntil) return "live";
+  if(now < liveFrom) return "upcoming";
+  return "past";
+}
+
+// Vybere, co se ukáže jako hlavní karta: živý zápas > nejbližší naplánovaný
+// > poslední odehraný. Hledá napříč VŠEMI sezónami — nezávisle na tom,
+// jaká sezóna je zrovna vybraná v přepínači níž.
+function pickFeatured(withStatus){
+  const live = withStatus.find(m => m.status === "live");
+  if(live) return live;
+  const upcoming = withStatus.filter(m => m.status === "upcoming").sort((a, b) => a.start - b.start);
+  if(upcoming.length) return upcoming[0];
+  const past = withStatus.filter(m => m.status === "past").sort((a, b) => b.start - a.start);
+  return past[0] || null;
+}
+
+function renderHero(featured){
+  const titleEl = document.getElementById("heroSectionTitle");
+  const el = document.getElementById("heroMatch");
+
+  if(!featured){
+    titleEl.textContent = "Zápasy";
+    el.innerHTML = `<div class="empty-box" style="grid-column:1/-1;">Zatím žádné zápasy k zobrazení.</div>`;
+    return;
+  }
+
+  const m = featured;
+  el.onclick = null;
+
+  if(m.status === "live"){
+    titleEl.innerHTML = `<span class="dot-live"></span> Živě`;
+    const playable = !!m.embed;
+    if(playable) el.onclick = () => openPlayer(m._i);
+    el.innerHTML = `
+      <div class="hero-thumb"><div class="play-badge">${PLAY_ICON}</div></div>
+      <div class="hero-info">
+        <div class="hero-eyebrow">Právě se hraje · ${m.phase}</div>
+        <div class="hero-tags">${tagOf(m)}</div>
+        <h2 class="hero-opponent">${opponentOf(m)}</h2>
+        <div class="hero-meta">Rozskok <b>${m.time}</b> · ${m.date}</div>
+        ${playable
+          ? `<button class="btn-play-lg" type="button">${PLAY_ICON}Sledovat živě</button>`
+          : `<span class="btn-soon">Přenos se spouští, chvíli strpení…</span>`}
+      </div>`;
+    return;
+  }
+
+  if(m.status === "upcoming"){
+    titleEl.textContent = "Nejbližší zápas";
+    const playable = !!m.embed;
+    if(playable) el.onclick = () => openPlayer(m._i);
+    el.innerHTML = `
+      <div class="hero-thumb"><div class="play-badge">${PLAY_ICON}</div></div>
+      <div class="hero-info">
+        <div class="hero-eyebrow">${m.phase}</div>
+        <div class="hero-tags">${tagOf(m)}</div>
+        <h2 class="hero-opponent">${opponentOf(m)}</h2>
+        <div class="hero-meta">Rozskok <b>${m.time}</b> · ${m.date}</div>
+        ${playable
+          ? `<button class="btn-play-lg" type="button">${PLAY_ICON}Přehrát</button>`
+          : `<span class="btn-soon">Zápas ještě nezačal</span>`}
+      </div>`;
+    return;
+  }
+
+  titleEl.textContent = "Poslední zápas";
+  const playable = !!m.embed;
+  if(playable) el.onclick = () => openPlayer(m._i);
+  el.innerHTML = `
+    <div class="hero-thumb"><div class="play-badge">${PLAY_ICON}</div></div>
+    <div class="hero-info">
+      <div class="hero-eyebrow">${m.phase}</div>
+      <div class="hero-tags">${tagOf(m)}</div>
+      <h2 class="hero-opponent">${opponentOf(m)}</h2>
+      <div class="hero-meta"><b>${m.date}</b> · ${m.time}</div>
+      ${playable
+        ? `<button class="btn-play-lg" type="button">${PLAY_ICON}Přehrát záznam</button>`
+        : `<span class="btn-soon">Zatím bez videa</span>`}
+    </div>`;
+}
+
+// Zápasy, ze kterých se plní karty a seznam pod "Odehrané zápasy" —
+// VŽDY jen odehrané (status "past"), nikdy budoucí, i kdyby to znamenalo
+// sáhnout do předchozí sezóny. Naplánované zápasy se ukazují výhradně
+// jednou, jako hlavní karta nahoře.
+function pastPool(withStatus, featured){
+  return withStatus
+    .filter(m => m.status === "past" && m !== featured && m.season === state.season)
+    .sort((a, b) => b.start - a.start);
+}
+
+function renderCards(pool){
+  const row = document.getElementById("cardsRow");
+  const cardMatches = pool.slice(0, 3);
+
+  if(cardMatches.length === 0){
+    row.innerHTML = `<div class="empty-box" style="grid-column:1/-1;">V týhle sezóně zatím nejsou žádné odehrané zápasy.</div>`;
+    return;
+  }
+
+  row.innerHTML = cardMatches.map((m) => {
+    const playable = !!m.embed;
+    const action = playable
+      ? `<button class="btn-play" type="button">${PLAY_ICON}Přehrát</button>`
+      : `<span class="btn-soon">bez videa</span>`;
+    return `
+      <div class="match-card" ${playable ? `onclick="openPlayer(${m._i})"` : ""}>
+        <div class="card-top"><span class="card-date">${m.date} · ${m.time}</span>${tagOf(m)}</div>
+        <div class="card-opponent">${opponentOf(m)}</div>
+        <div class="card-phase">${m.phase}</div>
+        <div class="card-action">${action}</div>
+      </div>`;
+  }).join("");
+}
+
+function renderSeasonTabs(seasons){
+  const box = document.getElementById("seasonTabs");
+  box.innerHTML = seasons.map(s =>
+    `<button class="season-tab ${s === state.season ? 'active' : ''}" data-season="${s}" type="button">${s}</button>`
+  ).join("");
+  box.querySelectorAll(".season-tab").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.season = btn.dataset.season;
+      refreshSeasonView();
+    });
+  });
+}
+
+function uniquePhases(rest){
+  const seen = new Set(); const order = [];
+  rest.forEach(m => { if(!seen.has(m.phase)){ seen.add(m.phase); order.push(m.phase); } });
+  return order;
+}
+function populatePhaseSelect(rest){
+  const sel = document.getElementById("phaseSelect");
+  sel.innerHTML = `<option value="all">Všechny fáze</option>`;
+  uniquePhases(rest).forEach(p => {
+    const opt = document.createElement("option");
+    opt.value = p; opt.textContent = p;
+    sel.appendChild(opt);
+  });
+}
+function passesFilter(m){
+  if(state.loc !== "all" && m.us !== state.loc) return false;
+  if(state.phase !== "all" && m.phase !== state.phase) return false;
+  if(state.q){
+    const opp = opponentOf(m).toLowerCase();
+    if(!opp.includes(state.q)) return false;
+  }
+  return true;
+}
+function renderList(){
+  const list = document.getElementById("matchList");
+  const rest = window.__beksaListRest || [];
+  const rows = rest.filter(passesFilter);
+
+  if(rows.length === 0){
+    list.innerHTML = `<div class="empty-box">Žádný zápas neodpovídá filtru.</div>`;
+    return;
+  }
+  list.innerHTML = rows.map((m) => {
+    const playable = !!m.embed;
+    const action = playable
+      ? `<button class="btn-play" type="button">${PLAY_ICON}Přehrát</button>`
+      : `<span class="btn-soon">bez videa</span>`;
+    return `
+      <div class="match ${playable ? 'playable' : ''}" ${playable ? `onclick="openPlayer(${m._i})"` : ""}>
+        <div class="m-date"><b>${m.date}</b>${m.time}</div>
+        <div class="m-teams">${tagOf(m)}<span class="opp-name">${opponentOf(m)}</span></div>
+        <div class="m-phase">${m.phase}</div>
+        <div class="m-action">${action}</div>
+      </div>`;
+  }).join("");
+}
+
+let __withStatus = [];
+let __featured = null;
+
+function refreshSeasonView(){
+  document.querySelectorAll(".season-tab").forEach(b => b.classList.toggle("active", b.dataset.season === state.season));
+  const pool = pastPool(__withStatus, __featured);
+  renderCards(pool);
+  window.__beksaListRest = pool.slice(3);
+  state.loc = "all"; state.phase = "all"; state.q = "";
+  document.getElementById("searchInput").value = "";
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.toggle("active", b.dataset.loc === "all"));
+  populatePhaseSelect(window.__beksaListRest);
+  renderList();
+}
+
+function openPlayer(i){
+  const m = matches[i];
+  if(!m.embed) return;
+  document.getElementById("playerTitle").textContent = `${m.home} – ${m.away} · ${m.date}`;
+  document.getElementById("playerFrame").src = `https://embed.tvcom.cz/${m.embed}/`;
+  document.getElementById("overlay").classList.add("open");
+}
+function closePlayer(){
+  document.getElementById("overlay").classList.remove("open");
+  document.getElementById("playerFrame").src = "";
+}
+document.getElementById("overlay").addEventListener("click", (e) => { if(e.target.id === "overlay") closePlayer(); });
+document.addEventListener("keydown", (e) => { if(e.key === "Escape") closePlayer(); });
+
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    state.loc = btn.dataset.loc;
+    renderList();
+  });
+});
+document.getElementById("phaseSelect").addEventListener("change", (e) => { state.phase = e.target.value; renderList(); });
+document.getElementById("searchInput").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); renderList(); });
+
+async function loadMatches(){
+  const heroEl = document.getElementById("heroMatch");
+  heroEl.innerHTML = `<div class="empty-box" style="grid-column:1/-1;">Načítám zápasy…</div>`;
+  try {
+    const res = await fetch("data/matches.json", { cache: "no-store" });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    matches = await res.json();
+  } catch(err) {
+    console.error("Nepodařilo se načíst data/matches.json:", err);
+    heroEl.innerHTML = `<div class="empty-box" style="grid-column:1/-1;">Data zápasů se nepodařilo načíst. Zkuste stránku znovu načíst za chvíli.</div>`;
+    return;
+  }
+
+  const now = new Date();
+  __withStatus = matches.map((m, i) => ({ ...m, _i: i, start: parseStart(m), status: statusOf(m, now) }));
+
+  __featured = pickFeatured(__withStatus);
+  renderHero(__featured);
+
+  const seasons = [...new Set(matches.map(m => m.season))].sort().reverse();
+
+  // Výchozí sezóna = sezóna posledního odehraného zápasu (ne kalendářní
+  // dnešek — na startu nové sezóny by jinak byl seznam prázdný).
+  const mostRecentPast = __withStatus.filter(m => m.status === "past").sort((a, b) => b.start - a.start)[0];
+  state.season = mostRecentPast ? mostRecentPast.season : seasons[0];
+
+  renderSeasonTabs(seasons);
+  refreshSeasonView();
+}
+
+loadMatches();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "beksa-tv-scraper",
+  "version": "1.0.0",
+  "description": "Scraper, který stahuje rozpis a video embedy zápasů BK KVIS Pardubice (Beksa) z tvcom.cz",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "scrape": "node scraper.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
