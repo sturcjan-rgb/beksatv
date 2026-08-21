@@ -41,7 +41,7 @@ Pages plus jeden scheduled job, který jednou za čas přepíše jeden JSON soub
 
 ## Co je ověřeno pro tenhle klub
 
-- **Soutěž na tvcomu:** `Soutez-Kooperativa-NBL` (zobrazuje se jako „Maxa NBL").
+- **Soutěž na tvcomu:** `Soutez-NBL` (zobrazuje se jako „Maxa NBL").
 - **Tým:** v Maxa NBL hraje jen A-tým „**BK KVIS Pardubice**", takže scraper
   filtruje podle `"Pardubice"` v názvu (mládežnické „BK VIVIDBOOKS Pardubice"
   jsou v jiných soutěžích, do výběru se nepletou).
