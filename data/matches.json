@@ -1,12 +1,193 @@
 [
   {
+    "date": "9. 1. 2027",
+    "time": "18:00",
+    "home": "BK Opava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "0d4914ce-cda4-400b-b814-d8e351611351"
+  },
+  {
+    "date": "2. 1. 2027",
+    "time": "18:30",
+    "home": "BK KVIS Pardubice",
+    "away": "USK Praha",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "f158c7cb-3ccb-419e-934a-11f30b91ea1b"
+  },
+  {
+    "date": "30. 12. 2026",
+    "time": "17:00",
+    "home": "BK Lokomotiva Plzeň",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "3c90f20b-17bb-4577-b55e-20491b00136d"
+  },
+  {
+    "date": "27. 12. 2026",
+    "time": "15:30",
+    "home": "BK KVIS Pardubice",
+    "away": "SLUNETA Ústí nad Labem",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "d7f11aa9-1dff-44e5-9c64-273326a873c0"
+  },
+  {
+    "date": "19. 12. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "SK Slavia Praha",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "e3ecfcf9-b03e-4153-be2a-4b5c1ee020e6"
+  },
+  {
+    "date": "12. 12. 2026",
+    "time": "17:30",
+    "home": "NH Ostrava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "7a73f67a-0ca2-4743-bacc-d2894ee57e42"
+  },
+  {
+    "date": "5. 12. 2026",
+    "time": "18:30",
+    "home": "BK KVIS Pardubice",
+    "away": "Sršni Photomate Písek",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "e79cd0c1-8e2f-4aea-b7a4-ea5279bba9ce"
+  },
+  {
+    "date": "21. 11. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "BK GAPA Hradec Králové",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "3b485179-9235-49f6-a375-28262aed99dc"
+  },
+  {
+    "date": "14. 11. 2026",
+    "time": "18:30",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "5f9855bc-61cc-4550-9b92-a018f9597b1d"
+  },
+  {
+    "date": "11. 11. 2026",
+    "time": "18:00",
+    "home": "BK ARMEX ENERGY Děčín",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "ad74ea52-e93f-4f20-b4c7-2338a46ea640"
+  },
+  {
+    "date": "7. 11. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Opava",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "85f0d140-86c6-48c0-bd7b-614fbe2e508e"
+  },
+  {
+    "date": "31. 10. 2026",
+    "time": "18:00",
+    "home": "USK Praha",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "0f4f4f60-865a-44fa-87dd-cab2f52533e7"
+  },
+  {
+    "date": "28. 10. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Lokomotiva Plzeň",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "bf484cae-faea-418e-b29e-760d8b0a4e49"
+  },
+  {
+    "date": "25. 10. 2026",
+    "time": "18:00",
+    "home": "SLUNETA Ústí nad Labem",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "e76ae2d8-d407-4410-9802-33656e422d26"
+  },
+  {
+    "date": "17. 10. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "BK ARMEX ENERGY Děčín",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "85db1be3-108a-4119-8842-e994628fc019"
+  },
+  {
+    "date": "14. 10. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Olomoucko",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2026/2027",
+    "embed": "49a2b094-7caf-4468-831f-971f71df60bb"
+  },
+  {
+    "date": "10. 10. 2026",
+    "time": "12:00",
+    "home": "SK Slavia Praha",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "10f6d300-978e-4177-8dbc-ff5ec3f5612b"
+  },
+  {
     "date": "3. 10. 2026",
     "time": "17:30",
     "home": "BK KVIS Pardubice",
     "away": "NH Ostrava",
     "phase": "Základní část",
     "us": "home",
-    "season": "2026/2027"
+    "season": "2026/2027",
+    "embed": "4764e469-e5c8-4a99-83a9-92c20badb6a6"
+  },
+  {
+    "date": "30. 9. 2026",
+    "time": "18:00",
+    "home": "Sršni Photomate Písek",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2026/2027",
+    "embed": "678e5c57-f8fb-4423-9689-f06ccf8f3575"
   },
   {
     "date": "26. 9. 2026",
@@ -15,7 +196,8 @@
     "away": "BK KVIS Pardubice",
     "phase": "Základní část",
     "us": "away",
-    "season": "2026/2027"
+    "season": "2026/2027",
+    "embed": "e9b963cc-0ba2-4707-a481-5379a8bbbd7b"
   },
   {
     "date": "23. 9. 2026",
@@ -24,7 +206,8 @@
     "away": "BK KVIS Pardubice",
     "phase": "Základní část",
     "us": "away",
-    "season": "2026/2027"
+    "season": "2026/2027",
+    "embed": "4a22352d-a6ac-4dbf-b9d7-dcbe56413bd0"
   },
   {
     "date": "19. 9. 2026",
@@ -37,13 +220,154 @@
     "embed": "7351aade-cefc-4117-92c6-b00f1dbafddf"
   },
   {
+    "date": "15. 6. 2026",
+    "time": "17:00",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "f0606483-0a35-465e-9654-6603c4d33bd2"
+  },
+  {
     "date": "13. 6. 2026",
     "time": "17:00",
     "home": "BK KVIS Pardubice",
     "away": "ERA Basketball Nymburk",
     "phase": "Play-off",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "e940bf1c-cef2-4e16-a0ab-88f0f568c066"
+  },
+  {
+    "date": "11. 6. 2026",
+    "time": "17:15",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "bcd8fa09-2414-4dd5-ab78-94e6b15300df"
+  },
+  {
+    "date": "8. 6. 2026",
+    "time": "18:00",
+    "home": "BK KVIS Pardubice",
+    "away": "ERA Basketball Nymburk",
+    "phase": "Play-off",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "b28f1ecb-ceab-4ed7-a654-ef96d8270bad"
+  },
+  {
+    "date": "7. 6. 2026",
+    "time": "19:00",
+    "home": "BK KVIS Pardubice",
+    "away": "ERA Basketball Nymburk",
+    "phase": "Play-off",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "20a0c45f-9e08-4f43-92b1-dc4c3d2131cb"
+  },
+  {
+    "date": "3. 6. 2026",
+    "time": "18:00",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "c96c7099-1a57-47d9-aad5-29c234b4f32a"
+  },
+  {
+    "date": "2. 6. 2026",
+    "time": "18:00",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "2fcbd374-0d0c-498d-bb12-13344641e89f"
+  },
+  {
+    "date": "27. 5. 2026",
+    "time": "19:00",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "5915e812-b522-446b-a578-af659a34bc87"
+  },
+  {
+    "date": "25. 5. 2026",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "PUMPA Basket Brno",
+    "phase": "Play-off",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "0c02f6c9-77c6-4a3e-a254-8a8d56dc40fb"
+  },
+  {
+    "date": "22. 5. 2026",
+    "time": "17:45",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "d638e0a1-28c8-4c22-be14-13ffab6677b4"
+  },
+  {
+    "date": "21. 5. 2026",
+    "time": "17:45",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "3c2d00e8-7d43-4075-b47b-48d656fcc506"
+  },
+  {
+    "date": "18. 5. 2026",
+    "time": "17:00",
+    "home": "BK KVIS Pardubice",
+    "away": "PUMPA Basket Brno",
+    "phase": "Play-off",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "d4668f68-f7be-4022-a807-a4c3831ce53a"
+  },
+  {
+    "date": "17. 5. 2026",
+    "time": "15:50",
+    "home": "BK KVIS Pardubice",
+    "away": "PUMPA Basket Brno",
+    "phase": "Play-off",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "f0b09f73-12da-48d3-bfeb-a6fc18b6ffdc"
+  },
+  {
+    "date": "5. 5. 2026",
+    "time": "18:00",
+    "home": "Sršni Photomate Písek",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "a8016450-16a4-4ba7-bcc8-d65219f3fcec"
+  },
+  {
+    "date": "4. 5. 2026",
+    "time": "17:50",
+    "home": "Sršni Photomate Písek",
+    "away": "BK KVIS Pardubice",
+    "phase": "Play-off",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "15477813-9b06-49f0-8eaf-4b6f4e225769"
   },
   {
     "date": "1. 5. 2026",
@@ -52,7 +376,8 @@
     "away": "Sršni Photomate Písek",
     "phase": "Play-off",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "3206b942-d5d9-4626-bfd2-86b4202ff0b3"
   },
   {
     "date": "30. 4. 2026",
@@ -61,7 +386,78 @@
     "away": "Sršni Photomate Písek",
     "phase": "Play-off",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "1df2c222-9043-4dd1-bdee-0e478c364358"
+  },
+  {
+    "date": "18. 4. 2026",
+    "time": "17:50",
+    "home": "BK KVIS Pardubice",
+    "away": "Sršni Photomate Písek",
+    "phase": "Skupina A1",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "c64d4030-57ae-4cab-90db-c3c9347d063b"
+  },
+  {
+    "date": "4. 4. 2026",
+    "time": "14:49",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A1",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "b53e639b-ac4c-434b-a03f-82416dda7b07"
+  },
+  {
+    "date": "1. 4. 2026",
+    "time": "17:00",
+    "home": "NH Ostrava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A1",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "76c12818-eafc-4357-8ee8-fa1afcc3d898"
+  },
+  {
+    "date": "29. 3. 2026",
+    "time": "18:00",
+    "home": "SLUNETA Ústí nad Labem",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A1",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "b2de1424-c822-433d-a15c-070a90f5f951"
+  },
+  {
+    "date": "25. 3. 2026",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Opava",
+    "phase": "Skupina A1",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "ab31d607-b880-40e0-a6c7-36c951f70873"
+  },
+  {
+    "date": "21. 3. 2026",
+    "time": "17:50",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A1",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "6b52526f-02dd-4b9f-b519-5713400683cb"
+  },
+  {
+    "date": "14. 3. 2026",
+    "time": "17:45",
+    "home": "BK ARMEX ENERGY Děčín",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A1",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "a5985e5f-6b5b-49e1-80fe-c1dd342a7b27"
   },
   {
     "date": "6. 3. 2026",
@@ -70,7 +466,58 @@
     "away": "BK KVIS Pardubice",
     "phase": "Skupina A1",
     "us": "away",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "8c7c2cb6-a4b0-4dc5-8e4b-ed232e169e7a"
+  },
+  {
+    "date": "18. 2. 2026",
+    "time": "17:00",
+    "home": "BK KVIS Pardubice",
+    "away": "ERA Basketball Nymburk",
+    "phase": "Skupina A1",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "f74f5eef-4b8c-4633-b10d-6cf807ee4fc3"
+  },
+  {
+    "date": "14. 2. 2026",
+    "time": "15:20",
+    "home": "BK KVIS Pardubice",
+    "away": "NH Ostrava",
+    "phase": "Skupina A1",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "24834ab1-9557-46c0-87f0-826e6044d8b7"
+  },
+  {
+    "date": "7. 2. 2026",
+    "time": "15:20",
+    "home": "BK KVIS Pardubice",
+    "away": "SLUNETA Ústí nad Labem",
+    "phase": "Skupina A1",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "5941568c-daa5-4af9-bab4-4a667f954e99"
+  },
+  {
+    "date": "31. 1. 2026",
+    "time": "18:00",
+    "home": "BK Opava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A1",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "066e386f-1948-4a2f-a4b5-98f1848d8021"
+  },
+  {
+    "date": "28. 1. 2026",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "PUMPA Basket Brno",
+    "phase": "Skupina A1",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "f7021196-b70d-4c55-95e1-58c4c7d459a9"
   },
   {
     "date": "24. 1. 2026",
@@ -79,7 +526,88 @@
     "away": "BK ARMEX ENERGY Děčín",
     "phase": "Skupina A1",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "416cf4c4-ff54-43f7-974e-ce16aa488ba0"
+  },
+  {
+    "date": "17. 1. 2026",
+    "time": "17:50",
+    "home": "BK Olomoucko",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "0b514caa-b369-4701-9e09-6221bb19fc37"
+  },
+  {
+    "date": "14. 1. 2026",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Opava",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "f4a3b7de-7e3c-4c6c-af3e-b8aa578204c1"
+  },
+  {
+    "date": "10. 1. 2026",
+    "time": "15:00",
+    "home": "BK KVIS Pardubice",
+    "away": "Sršni Photomate Písek",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "8e6aef7b-9e1d-4e37-9053-1f21177e6312"
+  },
+  {
+    "date": "3. 1. 2026",
+    "time": "17:40",
+    "home": "BK GAPA Hradec Králové",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "56d8096b-cdd5-4cb8-9d7c-0696f8970b16"
+  },
+  {
+    "date": "30. 12. 2025",
+    "time": "17:30",
+    "home": "BK KVIS Pardubice",
+    "away": "NH Ostrava",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "368497b1-de2e-4484-96de-2e01259f0660"
+  },
+  {
+    "date": "27. 12. 2025",
+    "time": "15:20",
+    "home": "BK KVIS Pardubice",
+    "away": "PUMPA Basket Brno",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2025/2026",
+    "embed": "0062bb0e-f66d-465a-bc84-805016efe261"
+  },
+  {
+    "date": "20. 12. 2025",
+    "time": "17:40",
+    "home": "BK ARMEX ENERGY Děčín",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "4d5a47b3-d1b0-4040-8c1a-97ed087d65d7"
+  },
+  {
+    "date": "13. 12. 2025",
+    "time": "16:49",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "b092e649-b584-4709-9b5a-2d43cb0659d9"
   },
   {
     "date": "6. 12. 2025",
@@ -88,7 +616,8 @@
     "away": "SK Slavia Praha",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "14b30e90-8762-45d2-8aea-b3b1ca0c5d88"
   },
   {
     "date": "22. 11. 2025",
@@ -97,7 +626,18 @@
     "away": "USK Praha",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "dae30178-9613-4583-9720-e0db998e30e7"
+  },
+  {
+    "date": "19. 11. 2025",
+    "time": "18:00",
+    "home": "SLUNETA Ústí nad Labem",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "350fe40c-0b3f-4cdc-869e-c4b6ebc98c65"
   },
   {
     "date": "12. 11. 2025",
@@ -106,7 +646,18 @@
     "away": "BK Olomoucko",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "257fe422-c89f-4a72-9c81-ef5cb445b635"
+  },
+  {
+    "date": "9. 11. 2025",
+    "time": "17:00",
+    "home": "Sršni Photomate Písek",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "36acde26-14d7-415c-9d9d-754aebcd3f7b"
   },
   {
     "date": "1. 11. 2025",
@@ -115,7 +666,8 @@
     "away": "BK GAPA Hradec Králové",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "81b62cab-5663-436b-ab25-705224b83ea3"
   },
   {
     "date": "29. 10. 2025",
@@ -124,7 +676,18 @@
     "away": "BK KVIS Pardubice",
     "phase": "Základní část",
     "us": "away",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "2d7c404d-6d7c-42e4-9984-fbd168cc73f2"
+  },
+  {
+    "date": "25. 10. 2025",
+    "time": "17:50",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2025/2026",
+    "embed": "55a1dd5d-815e-43c4-9b94-d2fcc10d524b"
   },
   {
     "date": "18. 10. 2025",
@@ -133,7 +696,8 @@
     "away": "BK ARMEX ENERGY Děčín",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "bbbc00d4-d97a-433b-bf49-4dd145e99d4d"
   },
   {
     "date": "11. 10. 2025",
@@ -142,7 +706,8 @@
     "away": "ERA Basketball Nymburk",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "7faed245-1814-4798-8239-3ce973e0cf78"
   },
   {
     "date": "8. 10. 2025",
@@ -151,7 +716,8 @@
     "away": "BK KVIS Pardubice",
     "phase": "Základní část",
     "us": "away",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "6ad6d666-814c-4e23-9ad9-d4d2931fcea3"
   },
   {
     "date": "4. 10. 2025",
@@ -160,7 +726,8 @@
     "away": "BK KVIS Pardubice",
     "phase": "Základní část",
     "us": "away",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "66623732-67ec-47c3-9410-7fed48752480"
   },
   {
     "date": "1. 10. 2025",
@@ -169,7 +736,8 @@
     "away": "SLUNETA Ústí nad Labem",
     "phase": "Základní část",
     "us": "home",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "8b4802ed-c761-410e-98f0-567c784f9de9"
   },
   {
     "date": "27. 9. 2025",
@@ -178,6 +746,367 @@
     "away": "BK KVIS Pardubice",
     "phase": "Základní část",
     "us": "away",
-    "season": "2025/2026"
+    "season": "2025/2026",
+    "embed": "227a47cc-d25b-44ea-b1ee-afc7e9498645"
+  },
+  {
+    "date": "13. 4. 2025",
+    "time": "17:30",
+    "home": "BK Olomoucko",
+    "away": "BK KVIS Pardubice",
+    "phase": "předkolo play-off",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "099eb2ed-bc48-4b60-83d3-2508f73818bf"
+  },
+  {
+    "date": "11. 4. 2025",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Olomoucko",
+    "phase": "předkolo play-off",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "9f3186f7-9f03-4b3a-baef-76f84949898d"
+  },
+  {
+    "date": "9. 4. 2025",
+    "time": "17:50",
+    "home": "BK Olomoucko",
+    "away": "BK KVIS Pardubice",
+    "phase": "předkolo play-off",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "f11dedbc-a6cc-409a-b7e9-3547659fea58"
+  },
+  {
+    "date": "5. 4. 2025",
+    "time": "18:00",
+    "home": "BK KVIS Pardubice",
+    "away": "NH Ostrava",
+    "phase": "Skupina A2",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "69a6570f-bfa2-4d4e-8cd3-15017447840f"
+  },
+  {
+    "date": "29. 3. 2025",
+    "time": "19:00",
+    "home": "SK Slavia Praha",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A2",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "54d33c58-80f3-4025-a17b-ce35294a2746"
+  },
+  {
+    "date": "26. 3. 2025",
+    "time": "18:00",
+    "home": "GBA Lions Jindřichův Hradec",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A2",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "c6e06906-89e3-4c15-b4e3-e15921635d80"
+  },
+  {
+    "date": "22. 3. 2025",
+    "time": "17:30",
+    "home": "NH Ostrava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A2",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "5066e5d9-4a32-4bce-9280-618deadf34b8"
+  },
+  {
+    "date": "19. 3. 2025",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "SK Slavia Praha",
+    "phase": "Skupina A2",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "1172db63-c542-41d2-841c-f5ee10e4c0d5"
+  },
+  {
+    "date": "15. 3. 2025",
+    "time": "18:30",
+    "home": "BK KVIS Pardubice",
+    "away": "SK Slavia Praha",
+    "phase": "Skupina A2",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "4c1d6bc2-456d-47e7-a548-aca3902ea2ae"
+  },
+  {
+    "date": "12. 3. 2025",
+    "time": "18:00",
+    "home": "GBA Lions Jindřichův Hradec",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A2",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "923d564e-3c76-4f84-9c61-2706992296f0"
+  },
+  {
+    "date": "8. 3. 2025",
+    "time": "17:30",
+    "home": "NH Ostrava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A2",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "a6b0b224-69b7-417d-ae90-74b7ef242006"
+  },
+  {
+    "date": "5. 3. 2025",
+    "time": "17:20",
+    "home": "SK Slavia Praha",
+    "away": "BK KVIS Pardubice",
+    "phase": "Skupina A2",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "ddaeeaad-ee7b-48d7-838a-ad6f92e6eb3f"
+  },
+  {
+    "date": "8. 2. 2025",
+    "time": "18:20",
+    "home": "BK KVIS Pardubice",
+    "away": "GBA Lions Jindřichův Hradec",
+    "phase": "Skupina A2",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "3a69e8d7-83d8-42d1-8fe5-b1d069862e0b"
+  },
+  {
+    "date": "5. 2. 2025",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "NH Ostrava",
+    "phase": "Skupina A2",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "c39079ed-85d6-4d0c-a966-8fe725f120ef"
+  },
+  {
+    "date": "25. 1. 2025",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "GBA Lions Jindřichův Hradec",
+    "phase": "Skupina A2",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "1ccd9bd6-dcac-4ab1-8687-ad9c8d20e130"
+  },
+  {
+    "date": "18. 1. 2025",
+    "time": "17:50",
+    "home": "SK Slavia Praha",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "535b25e0-210c-46ed-ab0f-77f00c7de01b"
+  },
+  {
+    "date": "10. 1. 2025",
+    "time": "19:30",
+    "home": "BK KVIS Pardubice",
+    "away": "Sršni Photomate Písek",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "366b1bc0-889b-473e-a098-0ad2a04bcaa7"
+  },
+  {
+    "date": "5. 1. 2025",
+    "time": "17:40",
+    "home": "BK ARMEX ENERGY Děčín",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "e46c52be-8387-48dc-8d2e-6054b3ae86ed"
+  },
+  {
+    "date": "29. 12. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "USK Praha",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "f4988fff-5be9-4176-932b-21e36aa3d8c6"
+  },
+  {
+    "date": "27. 12. 2024",
+    "time": "18:00",
+    "home": "NH Ostrava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "7bfc9a62-f0c6-4384-b90b-151f6b1e1f89"
+  },
+  {
+    "date": "21. 12. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "PUMPA Basket Brno",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "7698493c-2088-42a7-b00b-b7b9e2a9f6c9"
+  },
+  {
+    "date": "13. 12. 2024",
+    "time": "10:25",
+    "home": "ERA Basketball Nymburk",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "5758799b-c156-4b2e-96b1-94a34f6e8046"
+  },
+  {
+    "date": "7. 12. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "GBA Lions Jindřichův Hradec",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "b2cc56b3-eb4f-4d8c-9e11-c5f2981a38ee"
+  },
+  {
+    "date": "30. 11. 2024",
+    "time": "17:55",
+    "home": "BK KVIS Pardubice",
+    "away": "SLUNETA Ústí nad Labem",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "f0993aa6-eddc-468e-b792-be3baf6c191e"
+  },
+  {
+    "date": "16. 11. 2024",
+    "time": "18:00",
+    "home": "BK Opava",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "d10421e9-e50e-4115-a41a-d2a7d769ed18"
+  },
+  {
+    "date": "9. 11. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Olomoucko",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "ce0df897-6e87-40c0-8d26-71c7b13c49d0"
+  },
+  {
+    "date": "2. 11. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "SK Slavia Praha",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "e4dc2e0a-d60e-4bf6-a383-621ea4dc9e99"
+  },
+  {
+    "date": "30. 10. 2024",
+    "time": "18:00",
+    "home": "Sršni Photomate Písek",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "43381eb2-e3ef-45eb-adb2-825e4ce00b58"
+  },
+  {
+    "date": "26. 10. 2024",
+    "time": "17:25",
+    "home": "BK KVIS Pardubice",
+    "away": "BK ARMEX ENERGY Děčín",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "e3e4ca64-ce23-4642-9d44-c5425bf8e008"
+  },
+  {
+    "date": "19. 10. 2024",
+    "time": "17:30",
+    "home": "USK Praha",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "247d6a0d-b363-4c8f-9d3b-7556565b8136"
+  },
+  {
+    "date": "12. 10. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "NH Ostrava",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "d0a6d067-8d88-4e11-9371-fec955d02679"
+  },
+  {
+    "date": "9. 10. 2024",
+    "time": "17:50",
+    "home": "PUMPA Basket Brno",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "98940f11-206b-4cfb-a943-1e89fcc47a3f"
+  },
+  {
+    "date": "2. 10. 2024",
+    "time": "18:00",
+    "home": "GBA Lions Jindřichův Hradec",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "f81ed378-be7d-41f8-80a9-bda96bd6b8b8"
+  },
+  {
+    "date": "29. 9. 2024",
+    "time": "18:00",
+    "home": "SLUNETA Ústí nad Labem",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "28cd5d85-0336-4372-a355-db282500f07b"
+  },
+  {
+    "date": "25. 9. 2024",
+    "time": "17:20",
+    "home": "BK KVIS Pardubice",
+    "away": "BK Opava",
+    "phase": "Základní část",
+    "us": "home",
+    "season": "2024/2025",
+    "embed": "de3f7b40-af71-4598-a576-dbfec235f974"
+  },
+  {
+    "date": "21. 9. 2024",
+    "time": "17:50",
+    "home": "BK Olomoucko",
+    "away": "BK KVIS Pardubice",
+    "phase": "Základní část",
+    "us": "away",
+    "season": "2024/2025",
+    "embed": "955a9d80-96fc-4383-848b-6353a914be2a"
   }
 ]
